@@ -1,2 +1,2 @@
 
-This repository contains fileS pertinent to the course CSCI 5448 Object Oriented Analysis and Design 
+This repository contains files pertinent to the course CSCI 5448 Object Oriented Analysis and Design 
