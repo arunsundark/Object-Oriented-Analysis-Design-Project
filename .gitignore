@@ -3,8 +3,11 @@
 
 # Log file
 *.log
-# Eclipse metadata
+
+# Eclipse 
 .metadata
+.recommenders
+.settings
 
 # BlueJ files
 *.ctxt
