@@ -3,6 +3,8 @@
 
 # Log file
 *.log
+# Eclipse metadata
+.metadata
 
 # BlueJ files
 *.ctxt
