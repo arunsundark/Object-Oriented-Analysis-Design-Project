@@ -8,6 +8,8 @@
 .metadata
 .recommenders
 .settings
+.classpath
+.project
 
 # BlueJ files
 *.ctxt
