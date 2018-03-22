@@ -7,10 +7,12 @@
  * @author prajnya
  *
  */
-public class FlightVendor implements OptionFinder {
+
+
+public class FlightVendor extends FlightBasicDetails implements OptionFinder {
 
 	private String flightNum;
-	private String cost;
+	private int cost;
 	private int numSeats;
 	
 	public int checkAvailability() {
@@ -31,12 +33,12 @@ public class FlightVendor implements OptionFinder {
 	
 	/** Allows the flight vendor like United or AirIndia to add more flight routes and
 	 * Other corresponding information into the database.*/
-	public void addFlights(FlightVendor _VendorOb) {		
+	public void addFlights() {		
 		System.out.println("Pushes objrct to the particular entry in the database");
 	}
 	
 	/** Flight vendor can delete flight routes from the database.*/
-	public void removeFlights(FlightVendor _VendorOb) {
+	public void removeFlights() {
 		System.out.println("removes the entry from the database");
 	}
 
@@ -45,9 +47,10 @@ public class FlightVendor implements OptionFinder {
 	 * The system must confirm that there are no current bookings for the flight route marked for
 	 * deletion.
 	 * */
-	public void requestApproval(FlightVendor _VendorOb) {
+	public void requestApproval() {
 		
 		
 	}
+	
 
 }

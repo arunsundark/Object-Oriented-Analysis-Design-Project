@@ -8,7 +8,8 @@
  * @author prajnya
  *
  */
-public class HotelVendor implements OptionFinder {
+
+public class HotelVendor extends HotelBasicDetails implements OptionFinder {
 	
 	public int numVacancies;
 	
