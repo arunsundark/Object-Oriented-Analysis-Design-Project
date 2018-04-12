@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class FlightBooking 
+public class FlightBooking extends FlightBasicDetails implements Booking
 {
 	String passengerName;
 	String foodPref;
@@ -89,7 +89,7 @@ public class FlightBooking
 	{
 		this.specialAcc=_splAcc;
 	}
-	void displayFlightConfirmation()
+	public void displayConfirmation()
 	{
 		System.out.println("Ticket confirmed. Confirmation email will be sent");
 					

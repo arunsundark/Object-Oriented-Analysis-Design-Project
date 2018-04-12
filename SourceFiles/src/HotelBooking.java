@@ -6,14 +6,14 @@
 import java.util.*;
 
 
-public class HotelBooking extends HotelBasicDetails {
+public class HotelBooking extends HotelBasicDetails implements Booking {
 	private String customerId;
 	
 	public String getCustomerId() {
 		return customerId;
 	}
 	
-	public int makeSelection(HotelBooking[] list) {
+	public int makeHotelSelection(HotelBooking[] list) {
 		int choice=0;
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Please make your selection from the options below: (0 to cancel)");
