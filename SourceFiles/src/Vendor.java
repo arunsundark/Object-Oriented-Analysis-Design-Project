@@ -1,4 +1,9 @@
 
+
+/*
+Written by Arunsundar Kannan
+
+*/
 public interface Vendor {
 	int checkAvailability();
 	void displayOptions(); 
