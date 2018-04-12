@@ -9,7 +9,7 @@
  *
  */
 
-public class HotelVendor extends HotelBasicDetails implements OptionFinder {
+public class HotelVendor extends HotelBasicDetails implements Vendor {
 	
 	public int numVacancies;
 	
@@ -25,6 +25,15 @@ public class HotelVendor extends HotelBasicDetails implements OptionFinder {
 				+ "\n 1\tRamada\t$107";
 		System.out.println(display_string);
 		
+	}
+	
+	public void add(Vendor _VendorOb) {		
+		System.out.println("Pushes objrct to the particular entry in the database");
+	}
+	
+	/** Flight vendor can delete flight routes from the database.*/
+	public void removes(Vendor _VendorOb) {
+		System.out.println("removes the entry from the database");
 	}
 	
 	public int getNumVacancies(){

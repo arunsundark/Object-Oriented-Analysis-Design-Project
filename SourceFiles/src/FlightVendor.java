@@ -9,7 +9,7 @@
  */
 
 
-public class FlightVendor extends FlightBasicDetails implements OptionFinder {
+public class FlightVendor extends FlightBasicDetails  {
 
 	private String flightNum;
 	private int cost;
@@ -33,12 +33,12 @@ public class FlightVendor extends FlightBasicDetails implements OptionFinder {
 	
 	/** Allows the flight vendor like United or AirIndia to add more flight routes and
 	 * Other corresponding information into the database.*/
-	public void addFlights() {		
+	public void add(Vendor _VendorOb) {		
 		System.out.println("Pushes objrct to the particular entry in the database");
 	}
 	
 	/** Flight vendor can delete flight routes from the database.*/
-	public void removeFlights() {
+	public void removes(Vendor _VendorOb) {
 		System.out.println("removes the entry from the database");
 	}
 
