@@ -13,7 +13,7 @@ public class HotelBooking extends HotelBasicDetails {
 		return customerId;
 	}
 	
-	public int makeHotelSelection(HotelBooking[] list) {
+	public int makeSelection(HotelBooking[] list) {
 		int choice=0;
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Please make your selection from the options below: (0 to cancel)");
@@ -24,7 +24,7 @@ public class HotelBooking extends HotelBasicDetails {
 		return choice;
 	}
 	
-	public void displayHotelConfirmation() {
+	public void displayConfirmation() {
 		System.out.println("Your Hotel Booking is confirmed");
 		System.out.println("Customer ID: "+ customerId);
 		System.out.println("Hotel: "+ hotelName);
