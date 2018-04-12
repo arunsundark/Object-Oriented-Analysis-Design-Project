@@ -1,7 +1,6 @@
 
 public class CompositeBooking implements Booking{
 
-	@Override
 	public int makeSelection() {
 		// TODO Auto-generated method stub
 		return 0;

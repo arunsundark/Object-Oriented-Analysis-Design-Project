@@ -42,4 +42,10 @@ public class HotelVendor extends HotelBasicDetails implements Vendor {
 		return 1;
 	}
 
+	@Override
+	public void remove(Vendor _VendorOb) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
