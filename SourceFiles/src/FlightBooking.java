@@ -10,7 +10,19 @@ public class FlightBooking extends FlightBasicDetails implements Booking
 	String flightNum;
 	String cost;
 	String confNum;
+	private Scanner UserInput;
+
+	public FlightBooking()
+	{
+		this.UserInput = scan();
+	}
 	
+	private Scanner scan()
+	{
+		Scanner scanner = new Scanner(System.in);
+		return scanner;
+		
+	}
 	public String getFlightNum() {
 		return flightNum;
 	}
@@ -79,7 +91,6 @@ public class FlightBooking extends FlightBasicDetails implements Booking
     
     void enterPersonalDetails()
     {
-    	Scanner UserInput = new Scanner(System.in);
 		System.out.println("Enter Personal Details");
 		System.out.println("Passenger Name :");
 		String myPassenger = UserInput.nextLine();
@@ -93,7 +104,8 @@ public class FlightBooking extends FlightBasicDetails implements Booking
     }
 	void makeFlightSelection(String _flightNum)
 	{ 
-		//TODO: Get options from database and display for selection
+		System.out.println("Enter the number against your choice: ");
+		int mySelection = UserInput.nextInt();
 		this.flightNum=_flightNum;
 	}
 	void setFoodPreference(String _foodPref )

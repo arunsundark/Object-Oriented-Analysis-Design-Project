@@ -77,7 +77,6 @@ public class Cancellation {
 				+ "4: Other reasons");
 		// get their input as a String
 		this.reason = reasonScanner.next();
-		reasonScanner.close();
 	}
 	
 	public void cancelReservation(Cancellation _cancelObj)

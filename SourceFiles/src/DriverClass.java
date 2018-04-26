@@ -21,7 +21,12 @@ public class DriverClass {
 		if(userType==1)
 		{
 			NewUser traveler = new NewUser();
-			traveler.getInfo();
+			traveler.getOperationType();
+		}
+		if(userType==2)
+		{
+			FlightOperator newOperator = new FlightOperator();
+			newOperator.performOperations();
 		}
 
 	}
