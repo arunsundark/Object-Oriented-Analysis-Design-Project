@@ -17,6 +17,7 @@ public class HotelBooking extends HotelBasicDetails implements Booking {
 		int choice=0;
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Please make your selection from the options below: (0 to cancel)");
+		//TODO: Access database?
 		for (int i=0; i<list.length; i++) {
 			System.out.println(Integer.toString(i+1) + "\t" +list[i].hotelName + "\t" + list[i].location + "\t" + Integer.toString(list[i].price));
 		}

@@ -8,15 +8,15 @@ public class TravelFilters extends FlightBasicDetails
 	public void enterTravelDetails()
 	{	Scanner UserInput = new Scanner(System.in);
 		System.out.println("Enter Travel Details");
-		System.out.println("From :");
+		System.out.println("Which city are you traveling from? ");
 		String myFrom = UserInput.nextLine();
 		this.setFrom(myFrom);
-		System.out.println("To :");
+		System.out.println("Enter the destination: ");
 		String myTo = UserInput.nextLine();
 		this.setTo(myTo);
-		System.out.println("Date :");
+		System.out.println("Enter date in dd-MM-yyyy format: ");
 		String myStringDate = UserInput.next();
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 		Date myDate=null;
 		try
 		{

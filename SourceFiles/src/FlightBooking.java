@@ -9,8 +9,23 @@ public class FlightBooking extends FlightBasicDetails implements Booking
 	boolean specialAcc;
 	String flightNum;
 	String cost;
+	String confNum;
 	
-	
+	public String getFlightNum() {
+		return flightNum;
+	}
+	public void setFlightNum(String flightNum) {
+		this.flightNum = flightNum;
+	}
+	public String getConfNum() {
+		return confNum;
+	}
+	public void setConfNum(String confNum) {
+		this.confNum = confNum;
+	}
+	public void setSpecialAcc(boolean specialAcc) {
+		this.specialAcc = specialAcc;
+	}
 	public void setPassengerName(String _passengerName)
     {
    	 this.passengerName=_passengerName;
@@ -75,10 +90,10 @@ public class FlightBooking extends FlightBasicDetails implements Booking
 		System.out.println("Age :");
 		int myAge = UserInput.nextInt();
 		this.setAge(myAge);
-		UserInput.close();
     }
 	void makeFlightSelection(String _flightNum)
-	{
+	{ 
+		//TODO: Get options from database and display for selection
 		this.flightNum=_flightNum;
 	}
 	void setFoodPreference(String _foodPref )
@@ -91,7 +106,8 @@ public class FlightBooking extends FlightBasicDetails implements Booking
 	}
 	public void displayConfirmation()
 	{
-		System.out.println("Ticket confirmed. Confirmation email will be sent");
+		System.out.println("Congratulations! Your booking is now complete. \n"
+				+ "Your confirmation number is 007");
 					
 	}
 

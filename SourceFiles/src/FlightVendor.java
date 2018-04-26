@@ -16,19 +16,23 @@ public class FlightVendor extends FlightBasicDetails  {
 	private int numSeats;
 	
 	public int checkAvailability() {
+		// TODO: Access from DB.
 		this.numSeats = 25;
 		return this.numSeats;
 	}
 	
 	/** Displays all possible flight options with source, destination, airline and cost
 	* on the console.
-	* Asks the customer to pick on by typing in the number against the entry. */
-	public void displayOptions() {
-		
-		String displayString = "These are your fight options."
+	* Asks the customer to pick on by typing in the number against the entry. 
+	 * @return */
+	public String displayOptions() {
+		String displayString = "These are your fight options. Enter the number against the options: "
 				+ "\n\tSource\tDestination\tAirline\tCost"
 				+ "\n1.\tDelhi\tDenver\tUnited\t$1084";
 		System.out.println(displayString);
+		//TODO: set the flight num by setting the flightNum variable based on the option selected.
+		this.flightNum = "DENDELAI01";
+		return this.flightNum;
 	}
 	
 	/** Allows the flight vendor like United or AirIndia to add more flight routes and
@@ -49,7 +53,7 @@ public class FlightVendor extends FlightBasicDetails  {
 	 * */
 	public void requestApproval() {
 		
-		
+		//TODO:
 	}
 	
 

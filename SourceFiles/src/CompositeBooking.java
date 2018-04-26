@@ -1,5 +1,15 @@
 
 public class CompositeBooking implements Booking{
+	String confNum;
+	
+	
+	public String getConfNum() {
+		return confNum;
+	}
+
+	public void setConfNum(String confNum) {
+		this.confNum = confNum;
+	}
 
 	public int makeSelection() {
 		// TODO Auto-generated method stub

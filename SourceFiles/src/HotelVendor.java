@@ -28,7 +28,7 @@ public class HotelVendor extends HotelBasicDetails implements Vendor {
 	}
 	
 	public void add(Vendor _VendorOb) {		
-		System.out.println("Pushes objrct to the particular entry in the database");
+		System.out.println("Pushes object to the particular entry in the database");
 	}
 	
 	/** Flight vendor can delete flight routes from the database.*/
