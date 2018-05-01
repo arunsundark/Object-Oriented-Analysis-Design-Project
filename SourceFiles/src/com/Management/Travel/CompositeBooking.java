@@ -1,3 +1,5 @@
+package com.Management.Travel;
+
 
 public class CompositeBooking implements Booking{
 	String confNum;
@@ -16,10 +18,9 @@ public class CompositeBooking implements Booking{
 		return 0;
 	}
 
-	@Override
 	public void displayConfirmation() {
-		System.out.println("Congratulations! Your booking is now complete. \n"
-				+ "Your confirmation number is 007");
+		System.out.printf("\nCongratulations! Your booking is now complete. \n"
+				+ "Your confirmation number is %s", this.getConfNum());
 		
 	}
 	

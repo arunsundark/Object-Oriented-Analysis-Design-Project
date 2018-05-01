@@ -1,3 +1,5 @@
+package com.Management.Travel;
+
 /**
  * Class checks for availability of rooms in a hotel.
  * It prints a list of the available hotels and the price of each room for the customer 
@@ -42,7 +44,6 @@ public class HotelVendor extends HotelBasicDetails implements Vendor {
 		return 1;
 	}
 
-	@Override
 	public void remove(Vendor _VendorOb) {
 		// TODO Auto-generated method stub
 		

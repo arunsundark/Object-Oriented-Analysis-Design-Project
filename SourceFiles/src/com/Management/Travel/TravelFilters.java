@@ -1,7 +1,4 @@
-
-
-
-
+package com.Management.Travel;
 
 
 /*
@@ -10,17 +7,17 @@ Written Arunsundar Kannan
 */
 
 
-
-
-
-
 import java.util.Scanner;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
+
+import javax.persistence.*;
+
+@MappedSuperclass
 public class TravelFilters extends FlightBasicDetails 
 {
-	protected boolean roundTrip;
+	//private String roundTrip;
 	public void enterTravelDetails()
 	{	Scanner UserInput = new Scanner(System.in);
 		System.out.println("Enter Travel Details");
@@ -43,7 +40,6 @@ public class TravelFilters extends FlightBasicDetails
 		    e.printStackTrace();
 		}
 		this.setDate(myDate);
-		UserInput.close();
 	}
 	
 }

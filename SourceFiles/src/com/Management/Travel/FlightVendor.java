@@ -1,3 +1,5 @@
+package com.Management.Travel;
+
 /**
  * Class is used as a point of contact between the vendor who controls the flight routes,
  * the database and the admin who makes decisions of whether to remove flights or not.
@@ -27,11 +29,18 @@ public class FlightVendor extends FlightBasicDetails  {
 	 * @return */
 	public String displayOptions() {
 		String displayString = "These are your fight options. Enter the number against the options: "
-				+ "\n\tSource\tDestination\tAirline\tCost"
-				+ "\n1.\tDelhi\tDenver\tUnited\t$1084";
+				+ "\n\n\tSource\tDestination\tAirline\tCost"
+				+ "\n1.\tMoscow\tSanJose\t\tVirgin\t$1210"
+				+ "\n2.\tMoscow\tSanJose\t\tUnited\t$1357"
+				+ "\n3.\tMoscow\tSanJose\t\tSouthWest\t$1431";
+				/*+ "\n1.\tDelhi\tDenver\t\tUnited\t$1084"
+				+ "\n2.\tDelhi\tDenver\t\tAI\t$998"
+				+ "\n3.\tDelhi\tDenver\t\tLufth\t$775"
+				+ "\n2.\tDelhi\tDenver\t\tCont\t$992";*/
+		
 		System.out.println(displayString);
 		//TODO: set the flight num by setting the flightNum variable based on the option selected.
-		this.flightNum = "DENDELAI01";
+		this.flightNum = "MOSSFO12";
 		return this.flightNum;
 	}
 	

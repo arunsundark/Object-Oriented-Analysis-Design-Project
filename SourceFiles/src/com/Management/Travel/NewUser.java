@@ -1,5 +1,10 @@
+package com.Management.Travel;
 import java.util.Scanner;
 
+import javax.persistence.Entity;
+
+import org.hibernate.Session;
+import org.hibernate.annotations.Table;
 
 public class NewUser {
 	
@@ -24,15 +29,21 @@ public class NewUser {
 	
 	private void newBooking()
 	{
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		session.beginTransaction();
+		
 		FlightBooking personalDetails = new FlightBooking();
 		personalDetails.enterPersonalDetails();
-		TravelFilters travelInfo = new TravelFilters();
-		travelInfo.enterTravelDetails();
+		personalDetails.enterTravelDetails();
 		FlightVendor sysAdmin = new FlightVendor();
 		sysAdmin.checkAvailability();
 		String _flightNum = sysAdmin.displayOptions();
 		personalDetails.makeFlightSelection(_flightNum);
 		// TODO: How is the composite booking implemented?? No clue what's going on in there
+		session.save(personalDetails);
+		session.getTransaction().commit();
+			
+		session.close();
 		personalDetails.displayConfirmation();
 	}
 	
